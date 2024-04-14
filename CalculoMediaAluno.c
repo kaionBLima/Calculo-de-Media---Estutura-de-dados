@@ -8,7 +8,7 @@ typedef struct {
     char curso[20];
     float nota1;
     float nota2;
-} DadosDeALuno;
+} DadosAluno;
 
 double calculaMedia(float nota1, float nota2) {
     return (nota1 + nota2) / 2.0;
@@ -23,7 +23,7 @@ const char* verSituacao(float media) {
 }
 
 int main() {
-    DadosDeALuno X;
+    DadosAluno X;
     FILE *EntradaDeDados, *SaidaDeDados;
 
     EntradaDeDados = fopen("DadosEntrada.csv", "r");
